@@ -1,0 +1,225 @@
+.homeTop {
+    width: 100vw;
+    height: 40vh;
+    color:#fff;
+    display: flex;
+    align-items: center;
+    z-index: 9999;
+}
+
+
+.progress {
+    width: 20%;
+    height: 100%;
+    margin-left: 100px;
+    border-radius: 30px;
+    background: #172240;
+    background-image: url("https://i.pinimg.com/736x/3d/df/ba/3ddfbaaff070ea604879e06f4dc8669f.jpg");
+    background-position: center;
+    background-size: cover;
+    border:1px solid #000;
+    box-shadow: 10px 14px 7px rgba(0, 0, 0, 0.25);
+    transition: .2s all ease;
+    animation: 0.5s linear showProgress;
+}
+
+@keyframes showProgress {
+    0%{
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+.progress:hover {
+    transition: .2s all ease;
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.topText {
+    font:2em 'Baloo da 2';
+    margin: 47px 0px 24px 31px ;
+}
+
+.centerText {
+    font:1em 'Baloo da 2';
+    margin: 0px 0px 24px 31px ;
+}
+
+.progress_circle {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    margin: 0 auto;
+    border: 5px solid darkorchid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font: bold 1.8em 'Baloo da 2';
+}
+
+.new {
+    width: 23%;
+    height: 100%;
+    margin-left: 40px;
+    border-radius: 30px;
+    background: url("http://d5wt70d4gnm1t.cloudfront.net/media/a-s/articles/2511-065386505485/ten-depictions-of-the-cosmos-by-modern-masters-512x512-c.jpg");
+    background-size: cover;
+    border:1px solid #000;
+    position: relative;
+    box-shadow: 10px 14px 7px rgba(0, 0, 0, 0.25);
+    transition: .2s all ease;
+    animation: 0.8s linear showNew;
+}
+@keyframes showNew {
+    0%{
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+.new:hover {
+    transition: .2s all ease;
+    transform: scale(1.05);
+    cursor: pointer;
+}
+.btn {
+    width: 90%;
+    height: 70px;
+    position: absolute;
+    bottom: 5%; left: 5%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    background: rgba(175, 11, 120, 0.8);
+    border-radius: 30px;
+    font:1em 'Silkscreen';
+    text-align: center;
+    padding-top: 10px;
+    transition: .2s all ease;
+}
+.btn:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+    transition: .2s all ease;
+}
+
+.community{
+    width: 779px;
+    height: 100%;
+    margin-left: 30px;
+    left: 887px;
+    top: 188px;
+    background: linear-gradient(90.16deg, #642B73 0.84%, #C6426E 99.86%);
+    box-shadow: 10px 14px 7px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+    transition: .2s all ease;
+    animation: 1s linear showCommunity;
+}
+
+@keyframes showCommunity {
+    0%{
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+.community:hover {
+    transition: .2s all ease;
+    transform: scale(1.03);
+    cursor: pointer;
+}
+
+.leftSide {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+    float:left;
+}
+
+.community_text {
+    width: 80%;
+    margin-top: 50px;
+    font:2.25em 'Baloo da 2';
+    text-shadow: 1px 1px 2px rgb(0, 0, 0);
+}
+
+.community_btn {
+    width: 80%;
+    height: 60px;;
+    margin-top: 50px;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font:1.3em 'Silkscreen';
+    background-color: #C6426E;
+    border-radius: 30px;
+    box-shadow: 10px 14px 7px rgba(0, 0, 0, 0.25);
+    transition: .2s all ease;
+}
+.community_btn:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+    transition: .2s all ease;
+}
+
+.rightSide {
+    width: 40%;
+    height: 90%;
+    position: relative;
+    left: 5%;
+    top: 5%;
+    display: flex;
+    background-image: url(astronaut.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    mix-blend-mode: lighten;
+    animation: 15s linear astro infinite;
+}
+@keyframes astro {
+    0%{
+        transform: rotate(0);
+    }
+    50%{
+        transform: rotate(10deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+
+@media screen and (max-width: 1366px) {
+    .homeTop {
+        width: 100vw;
+        height: 60vh;
+        display: flex;
+        align-items: center;
+    }
+    
+    .progress {
+        width: 25%;
+        height: 95%;
+        margin-left: 20px;
+    }
+    .new {
+        width: 35%;
+        height: 100%;
+        margin-left: 20px;
+        border-radius: 30px;
+        position: relative;
+
+    }
+    .community{
+        width: 50%;
+        margin-right: 50px;
+    }
+}

@@ -1,0 +1,151 @@
+.content_container {
+    width: 100vw;
+    height: 80vh;
+    position: relative;
+}
+.background_core {
+    width: 60vw;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    background-image: url("asd2.png");
+    background-size: cover;
+    border-radius: 253px 0 0 253px;
+    mix-blend-mode: color-dodge;
+}
+
+.core_shining {
+    width: 60vw;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    background-image: url("asd2.png");
+    background-size: cover;
+    border-radius: 253px 0 0 253px;
+    mix-blend-mode: color-dodge;
+    animation: shining 5s ease-in-out infinite alternate;
+}
+
+@keyframes shining {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.4;
+    }
+    100% {
+        opacity: 1
+    }
+}
+
+.introduce {
+    width: 28%;
+    min-height: auto;
+    position: absolute;
+    top: 10%;
+    left: 4%;
+    color: #fff;
+}
+
+.underline {
+    font-family: 'Silkscreen';
+    text-decoration: underline dotted;
+    transition: .2s all ease;
+    cursor: pointer;
+}
+
+.underline:hover {
+    color: #ef4fc8;
+    transition: .2s all ease;
+}
+
+.first {
+    font: 5em 'Baloo da 2';
+    font-weight: 900;
+}
+
+.second {
+    margin-top: -80px;
+    font: 1.9em 'Baloo da 2';
+    font-weight: 500;
+}
+
+.third {
+    font: 1.8em 'Baloo da 2';
+}
+
+.subscribe_container {
+    width: 28%;
+    min-height: auto;
+    position: absolute;
+    top:80%;left: 4%;
+    height: 70px;
+    display: flex;
+}
+
+.subscribe_input {
+     width: 371px;
+     height: 90%;
+     background: rgba(26,18,101,0.18);
+     border: 3px solid black;
+     border-radius: 7px;
+     padding-left: 20px;
+     color:#fff;
+     font:1em 'Roboto';
+ }
+.subscribe_input::placeholder {
+    color:#fff;
+}
+
+.subscribe_btn {
+    width: 124px;
+    height: 100%;
+    margin-left: 10px;
+    background: #aa0f17;
+    border: 3px solid black;
+    border-radius: 7px;
+    text-align: center;
+    color:#fff;
+    font:bold 1.2em 'Silkscreen';
+    cursor: pointer;
+    font-weight: 300;
+    transition: .2s all ease;
+}
+.subscribe_btn:hover {
+    font-weight: 600;
+}
+.subscribe_btn::placeholder {
+    color:#fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -------  MEDIA QUERY SECTION ---------*/
+
+
+@media screen and (max-width: 1366px) {
+    .introduce {
+        top: -70px;
+        transform: scale(.9);
+    }
+    .subscribe_container {
+        margin-top: 20px;
+        transform: scale(.9);
+    }
+}

@@ -1,0 +1,124 @@
+.header_container {
+    width: 100vw;
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+
+    
+}
+
+
+@media screen and (max-width: 1366px) {
+    .header_container {
+        height: 80px;
+    }
+
+    .logo {
+        transform: scale(.7)
+    }
+
+    .nav_container {
+        display: flex;
+        margin-right: 50px;
+        transform: scale(.75)
+    }
+}
+
+.logo {
+    width: 308px;
+    height: 100%;
+    margin-left: 91px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    transition: .2s all ease-in-out;
+    animation: 1s linear fadeIn;
+}
+@keyframes fadeIn {
+    0% {
+        position: relative;
+        left: -500px;
+        opacity: 0;
+    }
+    100%{
+        position: relative;
+        left:0;
+        opacity: 1;
+    }}
+
+.logo:hover {
+    transform: scale(1.07);
+    transition: .2s all ease-in-out;
+    cursor: pointer;
+}
+
+.logoImg {
+    width: 58px;
+    height: 58px;
+    background-image: url("logo.png");
+    background-position: center;
+    background-size: contain;
+    margin-right: 24px;
+    animation: logoAnim 30s linear infinite;
+    transition: .2s all ease-in-out
+}
+
+@keyframes logoAnim {
+    0% {
+        transform: rotate(0deg)
+    }
+    100% {
+        transform: rotate(360deg)
+    }
+}
+
+.logoText {
+    font: 27px 'Baloo Da 2';
+    font-weight: 800;
+    color: #fff;
+}
+.ninja {
+    font-family: 'Silkscreen';
+    color:#c2171f;
+}
+.nav_container {
+    display: flex;
+    margin-right: 50px;
+    animation: 1s linear showNav;
+}
+@keyframes showNav {
+    0% {
+        position: relative;
+        right: -800px;
+        opacity: 0;
+    }
+    100%{
+        position: relative;
+        right:0;
+        opacity: 1;
+    }}
+
+
+ul.nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav li.navItem {
+    margin-right: 100px;
+    list-style: none;
+}
+
+.nav li.navItem a {
+    text-decoration: none;
+    font: 1.2em 'Roboto';
+    font-weight: 700;
+}
+
+.signBorder {
+    padding: 15px 20px;
+    border: 2px solid rgba(255, 255, 255, .5);
+    border-radius: 8px;
+
+}
+
