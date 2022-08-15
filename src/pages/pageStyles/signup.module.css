@@ -1,0 +1,50 @@
+.signupform_container {
+    width: 100vw;
+    height: 100vh;
+    color:#fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sign_up {
+    width: 30vw;
+    height: 70vh;
+    background: #0F0C29;
+    border: 1px solid #000000;
+    box-shadow: 16px 23px 4px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.inputForm{
+    width: 20vw;
+    height: 5vw;
+    margin-top: 50px;
+    background: rgba(197, 197, 197, 0.84);
+    border-radius: 23px;
+    font: 1.3em 'Baloo da 2';
+    padding-left: 25px;
+}
+
+.inputForm::placeholder {
+    font: 1.3em 'Baloo da 2';
+    padding-left: 25px;
+}
+
+.do_signup {
+    width: 10vw;
+    height: 7vh;
+    position: relative;
+    top: 100px;
+    background: #41B9B4;
+    border-radius: 20px;
+    font:1em 'Baloo da 2';
+    font-weight: 600;
+    color:#fff;
+    cursor:pointer;
+}
+

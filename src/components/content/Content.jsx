@@ -1,9 +1,11 @@
 import React from 'react';
 import styles from './content.module.css';
+import Header from '../header/Header';
 
 const Content = () => {
     return (
         <div className={styles.content_container}>
+            <Header/>
             <div className={styles.core}>
                 <div className={styles.background_core}></div>
                 <div className={styles.core_shining}></div>
